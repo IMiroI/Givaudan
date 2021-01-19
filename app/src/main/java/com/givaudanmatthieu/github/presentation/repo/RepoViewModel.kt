@@ -12,7 +12,7 @@ class RepoViewModel(application: Application) : AndroidViewModel(application) {
     private val repository: UserRepository = GithubRepository()
 
     private val _state = MutableLiveData<RepoState>()
-    val state : LiveData<RepoState> get() = _state
+    val state: LiveData<RepoState> get() = _state
 
     fun getUserRepo(text: String) {
         _state.value = RepoState.LoadingState

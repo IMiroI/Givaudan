@@ -12,9 +12,9 @@ import com.givaudanmatthieu.github.domain.model.UserShort
 import com.squareup.picasso.Picasso
 
 class SearchAdapter(context: Context, val listener: OnSearchItemClickListener) :
-    RecyclerView.Adapter<SearchAdapter.ViewHolder>() {
+        RecyclerView.Adapter<SearchAdapter.ViewHolder>() {
 
-    interface  OnSearchItemClickListener {
+    interface OnSearchItemClickListener {
         fun onSearchItemClick(login: String)
     }
 

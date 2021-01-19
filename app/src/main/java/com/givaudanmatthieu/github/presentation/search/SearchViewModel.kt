@@ -9,12 +9,12 @@ import com.givaudanmatthieu.github.domain.repository.UserRepository
 import kotlinx.coroutines.launch
 import java.lang.Exception
 
-class SearchViewModel : ViewModel()  {
+class SearchViewModel : ViewModel() {
 
     private val repository: UserRepository = GithubRepository()
 
     private val _state = MutableLiveData<SearchState>()
-    val state : LiveData<SearchState> get() = _state
+    val state: LiveData<SearchState> get() = _state
 
     fun searchUser(text: String) {
         _state.value = SearchState.LoadingState

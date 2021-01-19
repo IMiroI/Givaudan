@@ -5,8 +5,8 @@ import com.givaudanmatthieu.github.domain.model.UserShort
 
 interface UserRepository {
 
-    suspend fun searchUser(search : String) : List<UserShort>
+    suspend fun searchUser(search: String): List<UserShort>
 
-    suspend fun getUserRepo(text : String) : List<UserRepo>
+    suspend fun getUserRepo(text: String): List<UserRepo>
 
 }

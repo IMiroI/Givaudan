@@ -10,7 +10,7 @@ import com.givaudanmatthieu.github.R
 import com.givaudanmatthieu.github.domain.model.UserRepo
 
 class RepoAdapter(context: Context) :
-    RecyclerView.Adapter<RepoAdapter.ViewHolder>() {
+        RecyclerView.Adapter<RepoAdapter.ViewHolder>() {
 
     private val usersRepo: ArrayList<UserRepo> = ArrayList()
 

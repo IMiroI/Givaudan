@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.givaudanmatthieu.github.R
 import com.givaudanmatthieu.github.presentation.MainActivity
 
-class SearchFragment : Fragment(), SearchAdapter.OnSearchItemClickListener{
+class SearchFragment : Fragment(), SearchAdapter.OnSearchItemClickListener {
 
     private lateinit var button: Button
     private lateinit var editText: EditText
@@ -24,12 +24,12 @@ class SearchFragment : Fragment(), SearchAdapter.OnSearchItemClickListener{
 
     private val viewModel: SearchViewModel by viewModels()
 
-    private lateinit var adapter : SearchAdapter
+    private lateinit var adapter: SearchAdapter
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_user_search, container, false)
     }
@@ -71,7 +71,7 @@ class SearchFragment : Fragment(), SearchAdapter.OnSearchItemClickListener{
     }
 
     override fun onSearchItemClick(login: String) {
-        val activity : MainActivity? = activity as? MainActivity
+        val activity: MainActivity? = activity as? MainActivity
         activity?.displayUserRepo(login)
     }
 

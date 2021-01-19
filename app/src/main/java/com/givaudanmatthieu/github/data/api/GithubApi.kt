@@ -13,12 +13,12 @@ interface GithubApi {
 
     @GET("/search/users")
     suspend fun searchUser(
-        @Query("q") login: String,
-    ) : GithubSearchResponse
+            @Query("q") login: String,
+    ): GithubSearchResponse
 
     @GET("/users/{login}/repos")
     suspend fun getUserRepo(
-        @Path("login") login: String,
-    ) : List<GithubRepo>
+            @Path("login") login: String,
+    ): List<GithubRepo>
 
 }

@@ -10,4 +10,5 @@
     <string name="watchers_repos">watchers</string>
     <string name="license_repos">license</string>
     <string name="number_repo">number repo</string>
+    <string name="avatar">avatar</string>
 </resources>
