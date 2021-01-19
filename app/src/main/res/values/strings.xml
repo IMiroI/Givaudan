@@ -3,12 +3,12 @@
     <string name="search_bar_hint">User search</string>
     <string name="button_search">Search</string>
     <string name="empty_text_userTitle">empty</string>
-    <string name="name_repos">name</string>
-    <string name="description_repos">description</string>
-    <string name="language_repos">language</string>
-    <string name="forks_repos">forks</string>
-    <string name="watchers_repos">watchers</string>
-    <string name="license_repos">license</string>
-    <string name="number_repo">number repo</string>
+    <string name="name_repos">name : </string>
+    <string name="description_repos">description : </string>
+    <string name="language_repos">language : </string>
+    <string name="forks_repos">forks : </string>
+    <string name="watchers_repos">watchers : </string>
+    <string name="license_repos">license : </string>
+    <string name="number_repo">Number of repositories :</string>
     <string name="avatar">avatar</string>
 </resources>

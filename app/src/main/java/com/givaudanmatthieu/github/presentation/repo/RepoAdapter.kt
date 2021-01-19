@@ -1,5 +1,6 @@
 package com.givaudanmatthieu.github.presentation.repo
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -9,8 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.givaudanmatthieu.github.R
 import com.givaudanmatthieu.github.domain.model.UserRepo
 
-class RepoAdapter(context: Context) :
-        RecyclerView.Adapter<RepoAdapter.ViewHolder>() {
+class RepoAdapter(private val context: Context) :
+    RecyclerView.Adapter<RepoAdapter.ViewHolder>() {
 
     private val usersRepo: ArrayList<UserRepo> = ArrayList()
 
@@ -46,13 +47,15 @@ class RepoAdapter(context: Context) :
         private val watchers: TextView = view.findViewById(R.id.watchers)
         private val license: TextView = view.findViewById(R.id.license)
 
+        @SuppressLint("SetTextI18n")
         fun bind(userRepo: UserRepo) {
-            name.text = userRepo.name
-            description.text = userRepo.description
-            language.text = userRepo.language
-            forks.text = userRepo.forks.toString()
-            watchers.text = userRepo.watchers.toString()
-            license.text = userRepo.license
+            name.text = context.getString(R.string.name_repos) + userRepo.name
+            description.text = context.getString(R.string.description_repos) + userRepo.description
+            language.text = context.getString(R.string.language_repos) + userRepo.language
+            forks.text = context.getString(R.string.forks_repos) + userRepo.forks.toString()
+            watchers.text =
+                context.getString(R.string.watchers_repos) + userRepo.watchers.toString()
+            license.text = context.getString(R.string.license_repos) + userRepo.license
         }
     }
 
