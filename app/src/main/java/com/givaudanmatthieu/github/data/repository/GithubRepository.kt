@@ -40,5 +40,5 @@ fun GithubRepo.toUserRepos() = UserRepo(
     this.language,
     this.forks,
     this.watchers,
-    this.license,
+    this.license?.name,
 )

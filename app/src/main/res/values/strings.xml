@@ -5,7 +5,7 @@
     <string name="empty_text_userTitle">empty</string>
     <string name="name_repos">name</string>
     <string name="description_repos">description</string>
-    <string name="langage_repos">langage</string>
+    <string name="language_repos">language</string>
     <string name="forks_repos">forks</string>
     <string name="watchers_repos">watchers</string>
     <string name="license_repos">license</string>

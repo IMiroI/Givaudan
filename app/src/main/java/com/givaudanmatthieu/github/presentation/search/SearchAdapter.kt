@@ -46,6 +46,12 @@ class SearchAdapter(context: Context, val listener: OnSearchItemClickListener) :
         private val login: TextView = view.findViewById(R.id.login)
         private val avatar_url: ImageView = view.findViewById(R.id.avatar)
 
+        init {
+            view.setOnClickListener {
+                listener.onSearchItemClick(users[adapterPosition].login)
+            }
+        }
+
         fun bind(userShort: UserShort) {
             login.text = userShort.login
 
